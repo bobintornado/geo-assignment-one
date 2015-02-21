@@ -1,0 +1,58 @@
+<head>
+    <title>geo-bob</title>
+</head>
+
+<body>
+    <div class="row">
+        <div id="map">
+        </div>
+        <!-- <div id="control"></div>	 -->
+    </div>
+    <div class="legend">
+        <div id="psm-legend">
+            <svg height="160" id="psm-legend">
+                <circle cx="50" cy="30" r="30" fill="#FE2E2E" fill-opacity="0.5"></circle>
+                <circle cx="50" cy="85" r="20" fill="#FE2E2E" fill-opacity="0.5"></circle>
+                <circle cx="50" cy="120" r="10" fill="#FE2E2E" fill-opacity="0.5"></circle>
+                <circle cx="50" cy="140" r="5" fill="#FE2E2E" fill-opacity="0.5"></circle>
+                <text x="100" y="30">20</text>
+                <text x="100" y="85">15</text>
+                <text x="100" y="120">10</text>
+                <text x="100" y="140">5</text>
+            </svg>
+        </div>
+
+        <div id="choropleth-legend">
+            <svg height="60" id="choropleth-svg">
+                <text y="15" id="legendMinLabel">Population per clinic in subzone</text>
+                <rect y="25" width="35" height="10" x="0" style="fill: #fff7ec;" class="choropleth-bar"></rect>
+                <rect y="25" width="35" height="10" x="35" style="fill: #fee8c8;" class="choropleth-bar"></rect>
+                <rect y="25" width="35" height="10" x="70" style="fill: #fdd49e;" class="choropleth-bar"></rect>
+                <rect y="25" width="35" height="10" x="105" style="fill: #fdbb84;" class="choropleth-bar"></rect>
+                <rect y="25" width="35" height="10" x="140" style="fill: #fc8d59;" class="choropleth-bar"></rect>
+                <rect y="25" width="35" height="10" x="175" style="fill: #ef6548;" class="choropleth-bar"></rect>
+                <rect y="25" width="35" height="10" x="210" style="fill: #d7301f;" class="choropleth-bar"></rect>
+                <rect y="25" width="35" height="10" x="245" style="fill: #b30000;" class="choropleth-bar"></rect>
+                <rect y="25" width="35" height="10" x="280" style="fill: #7f0000;" class="choropleth-bar"></rect>
+                <text y="50" id="legendMinLabel">0</text>
+                <text y="50" x="270" id="legendMaxLabel">14000</text>
+
+            </svg>
+        </div>
+
+        <div id="mrt-legend">
+            <svg height="70" width="350">
+                <rect width="35" height="5" y="10" x="0" style="fill: #39ac00;"></rect>
+                <text y="17" x="40">East West Line</text>
+                <rect width="35" height="5" y="10" x="160" style="fill: #dc0000;"></rect>
+                <text y="17" x="200">North South Line</text>
+                <rect width="35" height="5" y="30" x="0" style="fill: #8000a5;"></rect>
+                <text y="37" x="40">North East Line</text>
+                <rect width="35" height="5" y="30" x="160" style="fill: #F4B234;"></rect>
+                <text y="37" x="200">Circle Line</text>
+                <rect width="35" height="5" y="50" x="0" style="fill: #0354A6;"></rect>
+                <text y="57" x="40">Downtown Line</text>
+            </svg>
+        </div>
+    </div>
+</body>
